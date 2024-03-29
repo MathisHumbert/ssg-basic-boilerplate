@@ -1,0 +1,14 @@
+$z-indexes: ('preloader', 'navigation', 'content');
+
+$ease-in-out: cubic(0.7, 0, 0.3, 1);
+$expo-in-out: cubic(0.9, 0, 0.1, 1);
+$ease-out: cubic(0.39, 0.575, 0.565, 1);
+$expo-out: cubic(0.19, 1, 0.22, 1);
+
+$breakpoints: (
+  'phone': 768px,
+  'tablet': 1024px,
+  'desktop': 1920px,
+) !default;
+
+@import 'node_modules/include-media/dist/include-media';

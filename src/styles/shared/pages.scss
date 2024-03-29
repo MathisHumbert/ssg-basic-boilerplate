@@ -1,0 +1,16 @@
+%page {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  z-index: z('content');
+}
+
+%page--active {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+
+%page__wrapper {
+  color: inherit;
+}
