@@ -60,7 +60,13 @@ class App {
       this.template = this.template.slice(0, -1);
     }
 
-    this.page = this.pages[this.template];
+    let page = this.pages[this.template];
+
+    if (page === undefined) {
+      page = this.home;
+    }
+
+    this.page = page;
 
     this.page.createPageLoader();
   }

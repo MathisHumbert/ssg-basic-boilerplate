@@ -10,7 +10,7 @@ export default class PageLoad extends Component {
   }
 
   createLoader() {
-    const src = img.getAttribute('data-page-src');
+    const src = this.element.getAttribute('data-page-src');
 
     if (src) {
       this.element.src = src;
